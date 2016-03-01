@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  purchase_date: 2016-03-01 09:39:20
+
+two:
+  user_id: 1
+  purchase_date: 2016-03-01 09:39:20
