@@ -27,7 +27,7 @@ end
   FactoryGirl.create(:cart, user: rand_user)
 end
 
-400.times do
+1000.times do
   offset = rand(Cart.count)
   rand_cart = Cart.offset(offset).first
   offset = rand(Product.count)
