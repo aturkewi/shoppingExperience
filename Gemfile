@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'faker'
 gem 'factory_girl_rails'
+gem 'seed_dump'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
