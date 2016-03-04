@@ -6,8 +6,7 @@ class Product < ActiveRecord::Base
 
   validates :name, uniqueness: true
   def self.most_purchased
-    id = joins(:line_items).group("product_id").count.max.first
-    find(id)
+    joins(:line_items).select("products.*, count(products.id) as 'times_bought'").group("products.id").order("times_bought DESC").limit(1)
   end
 
 end
